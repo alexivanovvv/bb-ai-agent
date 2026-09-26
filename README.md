@@ -1,5 +1,7 @@
 # bb - AI agentic IDE
 
+![bb - AI agentic IDE](assets/cover.png)
+
 Embeds [bb](https://github.com/get-bb/bb) — a local AI agentic IDE with a desktop app — inside an Obsidian tab or sidebar, via its local web interface.
 
 **Requires the [bb desktop app](https://github.com/get-bb/bb) to be installed.** This plugin has no functionality on its own — it is a thin wrapper around bb's local UI, for people who already use bb.
