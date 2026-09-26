@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.0.2
+
+- Added a README screenshot and a cover image for the plugin listing.
+
 ## 1.0.1
 
 - Removed "Obsidian" from the plugin description per submission review.

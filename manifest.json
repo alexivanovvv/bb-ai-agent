@@ -1,7 +1,7 @@
 {
 	"id": "bb-ai-agent",
 	"name": "bb - AI agentic IDE",
-	"version": "1.0.1",
+	"version": "1.0.2",
 	"minAppVersion": "1.4.0",
 	"description": "Opens bb (get-bb/bb), a local AI agentic IDE, inside a tab or sidebar via its local web interface. Requires the bb desktop app.",
 	"author": "Alexey Ivanov",
