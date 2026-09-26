@@ -20,6 +20,17 @@ This plugin only ever talks to your own machine — it makes no requests to any 
 - If that local address doesn't respond, it runs `open -g -b dev.bb.desktop` to launch the bb app in the background.
 - If the "set project defaults" setting is on, it reads and writes bb's local SQLite database at `~/.bb/bb.db` (via the `sqlite3` CLI) to look up the bb project matching the current vault path and set its default provider/model/permission mode.
 
+## Reviewer notes: shell access and clipboard
+
+Two automated-review warnings apply to this plugin. Both are intentional, and both are scoped to the user's own machine:
+
+- **Shell execution (`child_process`)** — used in exactly three places, all with fixed, non-user-controlled arguments:
+  - `exec("open -g -b dev.bb.desktop")` launches the bb desktop app in the background when its local server is not responding (macOS only; this plugin is desktop-only).
+  - `execFile("sqlite3", [...])` reads and writes `~/.bb/bb.db` to set the per-project provider/model/permission defaults. The SQL is built from the current vault path (single-quote escaped) and the plugin's own settings — no arbitrary command execution.
+- **Clipboard access** — only when the user clicks the `npx bb-app@latest` code snippet in the "bb not found" notice, to copy that install command. Nothing else is read from or written to the clipboard.
+
+No telemetry and no remote requests: the only network target is bb's local web interface on `localhost`.
+
 ## Settings
 
 - **bb URL** — local address of bb's web interface.
