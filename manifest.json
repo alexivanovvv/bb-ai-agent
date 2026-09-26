@@ -1,0 +1,9 @@
+{
+	"id": "bb-ai-agent",
+	"name": "bb - AI agentic IDE",
+	"version": "1.0.0",
+	"minAppVersion": "1.4.0",
+	"description": "Opens bb (get-bb/bb), a local AI agentic IDE, inside an Obsidian tab or sidebar via its web interface. Requires the bb desktop app.",
+	"author": "Alexey Ivanov",
+	"isDesktopOnly": true
+}

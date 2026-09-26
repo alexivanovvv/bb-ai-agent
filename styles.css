@@ -1,0 +1,11 @@
+.bb-view-container {
+	padding: 0;
+	height: 100%;
+}
+
+.bb-webview {
+	width: 100%;
+	height: 100%;
+	border: none;
+	display: inline-flex;
+}
