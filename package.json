@@ -1,0 +1,18 @@
+{
+  "name": "bb-ai-agent",
+  "version": "1.0.1",
+  "description": "Opens bb (get-bb/bb), a local AI agentic IDE, inside an Obsidian tab or sidebar via its web interface.",
+  "main": "main.js",
+  "license": "MIT",
+  "author": "Alexey Ivanov",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/alexivanovvv/bb-ai-agent.git"
+  },
+  "keywords": [
+    "obsidian",
+    "obsidian-plugin",
+    "ai-agent",
+    "bb"
+  ]
+}
